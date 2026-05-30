@@ -129,14 +129,13 @@ watch(showModal, async (isOpen) => {
     focusService.enableFocusTrap(modalRoot.value)
     focusService.safeFocusFirst()
   }
+    disableSwiperAutoplay()
 })
 
 onMounted( () => {
   if (isModalHidden()) return
-
   showModal.value = true
   lockScroll()
-  disableSwiperAutoplay()
 })
 
 onBeforeUnmount(() => {
