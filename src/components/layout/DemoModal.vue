@@ -5,7 +5,7 @@
     @click.self="closeModal"
     @keydown="handleKeyDown"
   >
-    <div class="demo-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="demo-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" ref="modalRoot">
       <!-- Header -->
       <div class="modal-header">
         <div class="modal-title" id="modal-title">
@@ -60,13 +60,15 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onBeforeUnmount } from 'vue'
+import { ref, onMounted, onBeforeUnmount, nextTick, watch } from 'vue'
 import { useScrollLock } from '../../utils/scrollLock'
+import { focusService } from '../../services/focus.service'
 
 const { lockScroll, unlockScroll } = useScrollLock()
 
 const showModal = ref(false)
 const dontShowAgain = ref(false)
+const modalRoot = ref(null)
 
 let originalAutoplay = true
 
@@ -114,14 +116,27 @@ const closeModal = () => {
   showModal.value = false
   unlockScroll()
   restoreSwiperAutoplay()
+  focusService.disableFocusTrap()
+  focusService.focusFirstInteractive()
 }
 
-onMounted(() => {
-  if (isModalHidden()) return
-    showModal.value = true
-    lockScroll()
-    disableSwiperAutoplay()
+watch(showModal, async (isOpen) => {
+  if (!isOpen) return
 
+  await nextTick()
+
+  if (modalRoot.value) {
+    focusService.enableFocusTrap(modalRoot.value)
+    focusService.safeFocusFirst()
+  }
+})
+
+onMounted( () => {
+  if (isModalHidden()) return
+
+  showModal.value = true
+  lockScroll()
+  disableSwiperAutoplay()
 })
 
 onBeforeUnmount(() => {
