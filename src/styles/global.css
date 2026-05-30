@@ -1,0 +1,64 @@
+/* src/styles/global.css */
+
+/* Reset léger */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  transition:
+    color 0.6s ease,
+    background-color 0.6s ease,
+    border-color 0.6s ease;
+}
+
+:root {
+  --color-primary: white;
+  --color-secondary: black;
+}
+
+/* Police & lisibilité globale */
+html, body {
+  font-family: "Source Code Pro", monospace;
+  background: #ffffff;
+  color: var(--color-primary);
+  line-height: 1.5;
+}
+
+/* Liens propres */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Images responsives */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Améliore rendu Vuetify + full height app */
+#app {
+  min-height: 100vh;
+}
+
+/* Scroll smooth */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Sélection texte élégante */
+
+.counter,
+.logo {
+  color: var(--color-primary);
+}
+
+.btn,
+.menu-btn,
+.nav-btn {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}

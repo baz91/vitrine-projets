@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "slug": "villa-mediterranee",
+    "title": "Villa Méditerranée",
+    "image": "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1600&q=80",
+    "quote": "Habiter la lumière, entre mer et pierre.",
+    "gallery": [
+      "https://images.unsplash.com/photo-1505691723518-36a5ac3b2a3e?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "text": "Projet de villa contemporaine inspirée des matériaux naturels et de la lumière méditerranéenne. L’architecture privilégie les espaces ouverts et la continuité intérieur/extérieur."
+  },
+  {
+    "id": 2,
+    "slug": "loft-parisien",
+    "title": "Loft Parisien",
+    "image": "https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?auto=format&fit=crop&w=1600&q=80",
+    "quote": "Minimalisme brut au cœur de Paris.",
+    "gallery": [
+      "https://images.unsplash.com/photo-1505692952047-1a78307da8f2?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1501045661006-fcebe0257c3f?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "text": "Réhabilitation d’un ancien atelier en loft contemporain. Mise en valeur des volumes, structure métallique apparente et lumière naturelle omniprésente."
+  },
+  {
+    "id": 3,
+    "slug": "hotel-alpin",
+    "title": "Hôtel Alpin",
+    "image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1600&q=80",
+    "quote": "Chaleur du bois face aux sommets.",
+    "gallery": [
+      "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "text": "Conception d’un hôtel de montagne alliant modernité et tradition alpine. Utilisation massive du bois et intégration paysagère forte."
+  },
+  {
+    "id": 4,
+    "slug": "bureau-contemporain",
+    "title": "Bureau Contemporain",
+    "image": "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1600&q=80",
+    "quote": "Travailler dans la lumière et le silence.",
+    "gallery": [
+      "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "text": "Aménagement d’espaces de travail ouverts favorisant la collaboration et le bien-être. Design minimaliste et ergonomie avancée."
+  },
+  {
+    "id": 5,
+    "slug": "residence-urbaine",
+    "title": "Résidence Urbaine",
+    "image": "https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&w=1600&q=80",
+    "quote": "La ville réinventée en vertical.",
+    "gallery": [
+      "https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "text": "Projet de résidence collective intégrant végétalisation, espaces communs et optimisation des surfaces urbaines."
+  }
+]
